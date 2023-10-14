@@ -1,0 +1,350 @@
+
+body, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /* font-family: Arial, sans-serif; */
+}
+.app{
+    padding-bottom: 150px;
+    background: linear-gradient(to right,#f663b6,#f8d063);
+}
+
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 35px;
+    font-family: Georgia, sans-serif;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    margin: auto;
+}
+
+.menu li {
+    margin: 0px 30px;
+}
+
+.icons i{
+    font-size: 25px;
+    padding: 8px;
+}
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: black;
+    height: 3px;
+    width: 25px;
+    margin: 3px 0;
+}
+.top-container{
+    background-image: url('./images/img1.jpg');
+    height: 706px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 25%;
+    display: flex;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+.text{
+    width: 35%;
+    background-color: rgba(241, 105, 105, 0.5);
+    color: white;
+    margin-left: 5%;
+    padding: 40px;
+    padding-right: 100px;
+}
+.text h3{
+    font-size: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+.text p{
+    font-size: 20px;
+    font-family: 'Helvetica', Arial, sans-serif;
+}
+.bottom-container {
+    text-align: center;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+.bottom-container>h3{
+    font-size: 50px;
+    letter-spacing: 5px;
+}
+.cards{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+
+}
+.cards div{
+    height: 400px;
+    width: 23%;
+    background-color: white;
+    border-radius:0px 70px 0px 70px ;
+    padding: 20px;
+    color: black;
+}
+.cards>div>img{
+    width: 100%;
+    border-radius:0px 65px 0px 0px ;
+    height: 70%;
+    object-fit: cover;
+    margin-bottom: 18px;
+}
+.cards b{
+    font-size: 25px;
+}
+.cards p{
+    font-size: 18px;
+}
+.bottom-container button{
+    margin-top: 90px;
+    padding: 19px 70px;
+    font-size: 22px;
+    border-radius: 50px;
+    border: none;
+    font-weight: 600;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+#phone{
+    transform: rotate(90deg);
+}
+
+/* For screens 1024px wide and above (landscape tablets) */
+
+@media screen and (max-width: 1024px) {
+    .app{
+        padding-bottom: 130px;
+    }
+    .menu li {
+        margin: 0px 10px;
+    }
+    .icons i{
+        font-size: 22px;
+        padding: 5px;
+    }
+    .top-container{
+        height: 550px;
+    }
+    .text{
+        width: 35%;
+        padding: 30px;
+        padding-right: 70px;
+    }
+    .text h3{
+        font-size: 30px;
+    }
+    .text p{
+        font-size: 16px;
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+    .bottom-container>h3{
+        font-size: 35px;
+        letter-spacing: 4px;
+    }
+    .cards{
+        width: 90%;
+    }
+    .cards div{
+        height: 300px;
+        width: 23%;
+        border-radius:0px 55px 0px 55px ;
+        padding: 15px;
+    }
+    .cards>div>img{
+        width: 100%;
+        border-radius:0px 50px 0px 0px ;
+        height: 60%;
+        margin-bottom: 15px;
+    }
+    .cards b{
+        font-size: 22px;
+    }
+    .cards p{
+        font-size: 16px;
+    }
+    .bottom-container button{
+        margin-top: 70px;
+        padding: 15px 60px;
+        font-size: 20px;
+        border-radius: 50px;
+        font-weight: 600;
+    }
+}
+
+/* For screens 768px wide and above (portrait tablets) */
+
+@media screen and (max-width: 768px) {
+    .app{
+        padding-bottom: 80px;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 55px;
+        left: 0;
+        right: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 10px 0;
+    }
+
+    .burger {
+        display: flex;
+    }
+    .top-container{
+        height: 450px;
+    }
+    .text{
+        width: 45%;
+        padding: 30px;
+        padding-right: 70px;
+    }
+    .text h3{
+        font-size: 30px;
+    }
+    .text p{
+        font-size: 16px;
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+    .bottom-container>h3{
+        font-size: 30px;
+        letter-spacing: 2.5px;
+    }
+    .cards{
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+    }
+    .cards div{
+        height: 270px;
+        width: 80%;
+        border-radius:0px 50px 0px 50px ;
+        padding: 12px;
+        margin-top: 25px;
+    }
+    .cards>div>img{
+        width: 100%;
+        border-radius:0px 45px 0px 0px ;
+        height: 60%;
+        margin-bottom: 10px;
+    }
+    .cards b{
+        font-size: 19px;
+    }
+    .cards p{
+        font-size: 14px;
+    }
+    .bottom-container button{
+        margin-top: 50px;
+        padding: 14px 50px;
+        font-size: 18px;
+    }
+}
+
+/* For screens up to 425px wide (small smartphones) */
+
+@media screen and (max-width: 450px) {
+    .app{
+        padding-bottom: 50px;
+    }
+    nav {
+        padding: 6px 14px;
+        height: 25px;
+    }
+    .menu{
+        top: 35px;
+    }
+    .bar {
+        background-color: black;
+        height: 2.5px;
+        width: 20px;
+        margin: 1.7px 0;
+    }
+    .menu li {
+        margin: 8px 0;
+        font-size: 18px;
+    }
+
+    .top-container{
+        height: 400px;
+    }
+    .icons i{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .text{
+        width: 80%;
+        padding: 15px;
+        padding-right: 20px;
+    }
+    .text h3{
+        font-size: 24px;
+    }
+    .text p{
+        font-size: 14px;
+        font-family: 'Helvetica', Arial, sans-serif;
+    }
+    .bottom-container>h3{
+        font-size: 25px;
+        letter-spacing: 1.5px;
+    }
+    .cards{
+        width: 60%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .cards div{
+        height: 270px;
+        width: 80%;
+        border-radius:0px 50px 0px 50px ;
+        padding: 12px;
+        margin-top: 25px;
+    }
+    .cards>div>img{
+        width: 100%;
+        border-radius:0px 45px 0px 0px ;
+        height: 60%;
+        margin-bottom: 10px;
+    }
+    .cards b{
+        font-size: 19px;
+    }
+    .cards p{
+        font-size: 14px;
+    }
+    .bottom-container button{
+        margin-top: 50px;
+        padding: 14px 50px;
+        font-size: 16px;
+    }
+}
