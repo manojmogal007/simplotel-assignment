@@ -1,6 +1,9 @@
 #Welcome to Simplotel app <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30px">
 ---
 
+## Live Website 
+ ~ Click here to [Go live](https://simplotel-app.vercel.app/) 
+ 
  ## Tech Stack
 
    ```
