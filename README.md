@@ -4,7 +4,7 @@
  ## Tech Stack
 
    ```
-   Frontend : HTML, CSS , Javascript
+   Frontend : HTML, CSS 
    ```
    ## Features
 
